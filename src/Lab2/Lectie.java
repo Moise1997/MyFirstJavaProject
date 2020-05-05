@@ -1,6 +1,6 @@
-package Lab2.lectie;
+package Lab2;
 
-public class Lab2 {
+public class Lectie {
 
     public static int memberVariable = 5;
     public static int firstNumber = 7;

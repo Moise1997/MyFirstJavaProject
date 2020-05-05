@@ -1,6 +1,6 @@
-package Lab2.TemaLab2Metode;
+package Lab2;
 
-public class nr2 {
+public class OperatiiMatematice {
     public static void main(String[] args) {
 
         System.out.println("Rezultatul adunarii este: " + adunare (10,12));

@@ -1,6 +1,6 @@
-package Lab2.TemaLab2Metode;
+package Lab2;
 
-public class nr3 {
+public class ModelJava {
 
     public static void main(String[] args) {
         System.out.println("   J    a   V     V  a");

@@ -1,6 +1,6 @@
-package Lab1.lectie;
+package Lab1;
 
-public class Main {
+public class Lectie {
 
     public static void main(String[] args) {
 

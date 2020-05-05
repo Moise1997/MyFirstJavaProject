@@ -1,6 +1,6 @@
-package Lab2.TemaLab2Metode;
+package Lab2;
 
-public class nr4 {
+public class MediaNumerelor {
     public static void main(String[] args) {
         System.out.println("Media celor 3 numere este: " + media ( 100,100 ,100 ) / 3);
 

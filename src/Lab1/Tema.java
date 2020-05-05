@@ -1,6 +1,6 @@
-package Lab1.TemaLab1;
+package Lab1;
 
-public class Main {
+public class Tema {
 
     public static void main(String [] args) {
         System.out.println("Hello");

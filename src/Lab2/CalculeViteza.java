@@ -1,6 +1,6 @@
-package Lab2.TemaLab2Metode;
+package Lab2;
 
-public class nr9 {
+public class CalculeViteza {
 
     public static void main(String[] args) {
         // 6 h

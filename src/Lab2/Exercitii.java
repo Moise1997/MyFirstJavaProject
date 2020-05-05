@@ -1,6 +1,6 @@
-package Lab2.TemaLab2Metode;
+package Lab2;
 
-public class nr1 {
+public class Exercitii {
 
     public static void main(String[] args) {
         printMyName();
