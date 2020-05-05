@@ -32,6 +32,9 @@ public class Main {
         System.out.println(LogicalOp.number("ceva", 2));
 
 
+        System.out.println(LogicalOp.la(3));
+
+
         System.out.println(LogicalOp.isNumberEven(4));
 
 
