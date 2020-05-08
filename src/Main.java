@@ -15,33 +15,55 @@ public class Main {
         System.out.println("Rezultatul este: " + calc.inmultire(100, 12));
 
 
-        LogicalOperations LogicalOp = new LogicalOperations();
-        int biggest = LogicalOp.checkBiggerNumber(143, 23);
+        LogicalOperations logicalOp = new LogicalOperations();
+
+        int biggest = logicalOp.checkBiggerNumber(143, 23);
         System.out.println("The biggest number is: " + biggest);
 
+        System.out.println(logicalOp.textCheck("Capra cu trei iezi"));
 
-        System.out.println(LogicalOp.textCheck("Capra cu trei iezi"));
+        System.out.println(logicalOp.ceva("ceva", 5));
 
+        System.out.println(logicalOp.snow("The", 12));
 
-        System.out.println(LogicalOp.ceva("ceva", 5));
+        System.out.println(logicalOp.number("ceva", 2));
 
+        System.out.println(logicalOp.la(3));
 
-        System.out.println(LogicalOp.snow("The", 12));
+        System.out.println(logicalOp.isNumberEven(4));
 
+        System.out.println(logicalOp.isEligibleToVote(17));
 
-        System.out.println(LogicalOp.number("ceva", 2));
+        System.out.println(logicalOp.la(6,2,5));
 
+        int number = 1;
+        logicalOp.printNumbers(number);
 
-        System.out.println(LogicalOp.la(3));
+        int nr1 = -1;
+        int nr2 = -100;
+        logicalOp.countToMinusHundred(nr1,nr2);
 
+        int a = 122;
+        int b = 200;
+        logicalOp.countingStars(a,b);
 
-        System.out.println(LogicalOp.isNumberEven(4));
+        int x =4;
+        int y = 10;
+        logicalOp.biggerNumber(x,y);
 
+        logicalOp.evenNumbers();
 
-        System.out.println(LogicalOp.isEligibleToVote(17));
+        logicalOp.oddNumbers();
 
+        int sum = 0;
+        System.out.println(logicalOp.sum(0));
 
-        System.out.println(LogicalOp.la(6,2,5));
+        float sum2 = 0;
+        float average = sum2 / 100F;
+        System.out.println(logicalOp.average(0));
+
+        logicalOp.tipar(7);
+
 
 
 
