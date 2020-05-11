@@ -36,33 +36,57 @@ public class Main {
 
         System.out.println(logicalOp.la(6,2,5));
 
-        int number = 1;
+        // Tema loop for
+
+        int number = 1;                     //ex1
         logicalOp.printNumbers(number);
 
-        int nr1 = -1;
+        int nr1 = -1;                               //ex2
         int nr2 = -100;
         logicalOp.countToMinusHundred(nr1,nr2);
 
-        int a = 122;
+        int a = 122;                                //ex3
         int b = 200;
         logicalOp.countingStars(a,b);
 
-        int x =4;
+        int x =4;                           //ex4
         int y = 10;
         logicalOp.biggerNumber(x,y);
 
-        logicalOp.evenNumbers();
+        logicalOp.evenNumbers();            //ex5
 
-        logicalOp.oddNumbers();
+        logicalOp.oddNumbers();             //ex6
 
-        int sum = 0;
+        int sum = 0;                            //ex7
         System.out.println(logicalOp.sum(0));
 
-        float sum2 = 0;
+        float sum2 = 0;                             //ex8
         float average = sum2 / 100F;
         System.out.println(logicalOp.average(0));
 
-        logicalOp.tipar(7);
+        logicalOp.tipar(7);         //ex9
+
+        // Tema loop while
+
+        logicalOp.counting();                   //ex1
+
+        logicalOp.countingBackwards();              //ex2
+
+        logicalOp.countingApples(15,20);         //ex3
+
+        logicalOp.bigger(3,8);             //ex4
+
+        logicalOp.evenNumbersShow();             //ex5
+
+        logicalOp.oddNumbersShow();             //ex6
+
+        logicalOp.sumAndAverage();              //ex7
+
+        logicalOp.numereDivizibile(7, 200);       // ex8
+
+        logicalOp.fibonnaciNumbers();                   //ex9
+
+        // logicalOp.CozaLozaWoza();                    /ex10
 
 
 
