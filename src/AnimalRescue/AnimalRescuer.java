@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Adopter {
+public class AnimalRescuer {
 
     public String name;
     public int money;
@@ -19,9 +19,6 @@ public class Adopter {
     public int getMoney(){
         return money;
     }
-
-
-
 
 
     public void name (){

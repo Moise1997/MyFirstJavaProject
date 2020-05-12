@@ -6,7 +6,6 @@ public class Animal {
     public int age;
     public String  colour;
     public String race;
-    public int chipNr;
     public float weight;
     public int levelOfHealth;
     public int levelOfHunger;
@@ -42,12 +41,6 @@ public class Animal {
         return race;
     }
 
-    public void setChipNr (int chipNr){
-        this.chipNr = chipNr;
-    }
-    public int getChipNr(){
-        return chipNr;
-    }
 
     public void setWeight (float weight){
         this.weight = weight;
@@ -90,15 +83,6 @@ public class Animal {
     public String getFavoriteActivity (){
         return favoriteActivity;
     }
-
-
-
-
-
-
-
-
-
 
 
     public void eat(){

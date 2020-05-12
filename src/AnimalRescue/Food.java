@@ -36,8 +36,6 @@ public class Food {
     }
 
 
-
-
     public void name (){
         System.out.println("food name");
     }
