@@ -1,8 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.SQLOutput;
-import java.util.Arrays;
-
 public class LogicalOperations {
 
 
@@ -128,7 +123,8 @@ public class LogicalOperations {
             for (int big = x; big < y; big++)
                 System.out.println(big);
         } else {
-            System.out.println("party time");
+            for (int small = y; small < x; small++)
+            System.out.println(small);
         }
     }
 
@@ -148,19 +144,22 @@ public class LogicalOperations {
         }
     }
 
-    public int sum(int sum) {                   //ex7
+    public int sum() {                   //ex7
+        int sum = 0;
         for (int i = 1; i <= 100; i++) {
             sum += i;
         }
         return sum;
     }
 
-    public float average(float sum2) {              //ex8
-        for (float i = 1; i <= 100; i++) {
+    public float average(float a) {              //ex8
+        float sum2 = 0;
+        float counter = 0;
+        for (float i = a; i <= 100; i++) {
             sum2 += i;
+            counter++;
         }
-        float average = sum2 / 100;
-        return average;
+        return sum2/counter;
     }
 
     public void tipar(int number) {                 //ex9
@@ -175,24 +174,19 @@ public class LogicalOperations {
 
     // Tema loop while
 
-    public void counting() {        //ex1
-        int suma = 0;
-        int numb = 0;
-        while (numb < 100) {
-            suma += numb;
-            numb++;
+    public void counting(int numb) {        //ex1
+        while (numb <= 100) {
             System.out.println(numb);
+            numb++;
         }
 
     }
 
-    public void countingBackwards() {       //ex2
-        int suma = 0;
-        int numb = 0;
-        while (numb > -100) {
-            suma -= numb;
-            numb--;
+    public void countingBackwards(int numb) {       //ex2
+
+        while (numb >= -100) {
             System.out.println(numb);
+            numb--;
         }
 
     }
@@ -230,40 +224,43 @@ public class LogicalOperations {
     public void oddNumbersShow() {           //ex6
         int i = 1;
         while (i < 100) {
-            if (i % 2 == 1) {
+            i++;
+            if (i % 2 != 0) {
                 System.out.println(i);
             }
-            i++;
         }
     }
 
-    public float sumAndAverage() {              //ex7
-        float i = 111F;
-        int sum = 0;
-        while (i <= 8899) {
+    public void sumAndAverage() {              //ex7
+        int i = 111;
+        int i2 = 8899;
+        double sum = 0;
+        int count = 0;
+        while (i <= i2) {
             sum += i;
             i++;
+            count++;
         }
-        int count = 8899 - 111;
         System.out.println(count);
-        System.out.println(sum);
-        System.out.println(sum / 8788F);
-        return sum / 8788F;
+        double average = sum/count;
+        System.out.println("The average number is:" + average);
     }
 
-    public void numereDivizibile(int x, int y) {          //ex8
-        float total = 0;
-        while (x <= y) {
-            x++;
-            total += x;
-            if (x / 7 == 0) {
+    public void numereDivizibile(int firstNumber, int lastNumber) {
+        float count = 0F;
+        float sum = 0F;
+        while (firstNumber <= lastNumber) {
+            if (firstNumber % 7 == 0) {
+                count ++;
+                sum += firstNumber;
             }
+            firstNumber++;
         }
-        float average = total / 200;
+        float average = sum / count;
         System.out.println(average);
     }
 
-    public void fibonnaciNumbers() {
+    public void fibonnaciNumbers() {                //ex9
         int c, a = 1, b = 1;
         c = 0;
         System.out.print("1 1 ");
@@ -276,21 +273,34 @@ public class LogicalOperations {
         System.out.println(" ");
     }
 
-    //public void CozaLozaWoza() {              //ex10
-      //  int x = 1;
-        //while (x <= 11) {
-          //  int y = 1;
-            //while (y <= 11) {
-              //  System.out.print(y + " ");
-                //y++;
-               // if (y % 3 == 1) {
-          //          System.out.print("Coza");
-           //     }
-        //    }
-        //    System.out.println();
-        //    x++;
-      //  }
+    public void wozaCozaLoza() {
+        int i = 1;
 
+        while (i <= 110) {
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+                System.out.print("CozaLozaWoza ");
+            } else if (i % 5 == 0 && i % 7 == 0) {
+                System.out.print("WozaLoza ");
+            } else if (i % 3 == 0 && i % 7 == 0) {
+                System.out.print("CozaWoza ");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.print("CozaLoza ");
+            } else if (i % 7 == 0) {
+                System.out.print("Woza ");
+            } else if (i % 5 == 0) {
+                System.out.print("Loza ");
+            } else if (i % 3 == 0) {
+                System.out.print("Coza ");
+            } else {
+                System.out.print(i + " ");
+            }
+            if (i % 11 == 0) {
+                System.out.println();
+            }
+            i++;
+        }
+
+    }
     }
 
 

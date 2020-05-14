@@ -57,20 +57,17 @@ public class Main {
 
         logicalOp.oddNumbers();             //ex6
 
-        int sum = 0;                            //ex7
-        System.out.println(logicalOp.sum(0));
+        System.out.println(logicalOp.sum());            //ex7
 
-        float sum2 = 0;                             //ex8
-        float average = sum2 / 100F;
-        System.out.println(logicalOp.average(0));
+        System.out.println(logicalOp.average(1));
 
         logicalOp.tipar(7);         //ex9
 
         // Tema loop while
 
-        logicalOp.counting();                   //ex1
+        logicalOp.counting(1);                   //ex1
 
-        logicalOp.countingBackwards();              //ex2
+        logicalOp.countingBackwards(-1);              //ex2
 
         logicalOp.countingApples(15,20);         //ex3
 
@@ -82,11 +79,11 @@ public class Main {
 
         logicalOp.sumAndAverage();              //ex7
 
-        logicalOp.numereDivizibile(7, 200);       // ex8
+        logicalOp.numereDivizibile(1,222);     // ex8
 
         logicalOp.fibonnaciNumbers();                   //ex9
 
-        // logicalOp.CozaLozaWoza();                    /ex10
+        logicalOp.wozaCozaLoza();                    //ex10
 
 
 
