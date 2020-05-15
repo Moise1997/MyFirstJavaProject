@@ -1,31 +1,23 @@
 package AnimalRescue;
 
-public class MedicalStaff {
+public class MedicalStaff extends Humans{
 
-    public String name;
     public String specialization;
-
-    public void setName (String name){
-        this.name = name;
-    }
-    public String getName(){
-        return name;
-    }
-
     public void setSpecialization (String specialization){
         this.specialization = specialization;
     }
     public String getSpecialization(){
         return specialization;
     }
-
-
-    public void name (){
-        System.out.println("name");
+    public void specialization (){
+        System.out.println("Specialization");
     }
 
-    public void specialization (){
-        System.out.println("specialization");
+    public void speak (){
+        System.out.println("");
+    }
+    public void proffesion (){
+        System.out.println("Doctor");
     }
 
 

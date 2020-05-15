@@ -88,12 +88,16 @@ public class Animal {
     public void eat(){
         System.out.println("Eating..");
     }
-
     public void run(){
-        System.out.println("running..");
+        System.out.println("Running..");
     }
-
     public void sleep(){
         System.out.println("ZzzZZzz..");
+    }
+    public void speak (){
+        System.out.println("Sounds");
+    }
+    public void walk (){
+        System.out.println("Sounds");
     }
 }

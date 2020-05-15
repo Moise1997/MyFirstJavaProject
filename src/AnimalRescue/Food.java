@@ -37,19 +37,19 @@ public class Food {
 
 
     public void name (){
-        System.out.println("food name");
+        System.out.println("Food name");
     }
 
     public void price (){
-        System.out.println("price");
+        System.out.println("Price");
     }
 
     public void quantity (){
-        System.out.println("quantity");
+        System.out.println("Quantity");
     }
 
     public void availability (){
-        System.out.println("availability");
+        System.out.println("Availability");
     }
 
 }

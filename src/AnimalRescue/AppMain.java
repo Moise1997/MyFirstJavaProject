@@ -9,13 +9,13 @@ public class AppMain {
         dog.setName("Rex");
         dog.setChipNr(122333);
         dog.setWeight(18.2F);
-        dog.setRace("ciobanesc german");
+        dog.setRace("German shepperd");
         dog.setLevelOfMood(8);
         dog.setLevelOfHunger(10);
         dog.setLevelOfHealth(9);
-        dog.setFavoriteFood("royal canin");
-        dog.setFavoriteActivity("chasing cats");
-        dog.setColour("brown");
+        dog.setFavoriteFood("Royal canin");
+        dog.setFavoriteActivity("Chasing cats");
+        dog.setColour("Brown");
         System.out.println(dog.getAge());
         System.out.println(dog.getName());
         System.out.println(dog.getWeight());
@@ -26,10 +26,12 @@ public class AppMain {
         System.out.println(dog.getFavoriteFood());
         System.out.println(dog.getFavoriteActivity());
         System.out.println(dog.getColour());
+        dog.speak();
+        dog.sleep();
 
         DogFood food = new DogFood();
         food.setAvailable("10 bags");
-        food.setName("royal canin");
+        food.setName("Royal canin");
         food.setPrice(67);
         food.setQuantity("3 bags");
         System.out.println(food.getAvailable());
@@ -37,25 +39,35 @@ public class AppMain {
         System.out.println(food.getPrice());
         System.out.println(food.getQuantity());
 
-        Rescuer name = new Rescuer();
-        name.setName("Sara");
-        name.setMoney(1500);
-        System.out.println(name.getName());
-        System.out.println(name.getMoney());
+        Rescuer rescuer = new Rescuer();
+        rescuer.setName("Sara");
+        rescuer.proffesion();
+        rescuer.speak();
+        rescuer.setMoney(1500);
+        System.out.println(rescuer.getName());
+        System.out.println(rescuer.getMoney());
 
         DogActivity activity = new DogActivity();
-        activity.setActivity("chasing cats");
+        activity.setActivity("Chasing cats");
         System.out.println(activity.getActivity());
 
         Vet vet = new Vet ();
-        vet.setName("doctor Sam");
-        vet.setSpecialization("nutritionist");
+        vet.proffesion();
+        vet.workPlace();
+        vet.setName("Sam");
+        vet.setSpecialization("Nutritionist");
         System.out.println(vet.getName());
         System.out.println(vet.getSpecialization());
+        vet.speak();
+
 
         Cat cat = new Cat();
         cat.setName("Pisi");
         System.out.println(cat.getName());
+        cat.speak();
+        cat.run();
+        cat.sleep();
+        cat.walk();
 
 
 
