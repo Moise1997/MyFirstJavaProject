@@ -10,9 +10,20 @@ public class Main {
         Calculator calc = new Calculator();
 
         System.out.println("Rezultatul este: " + calc.adunare(12, 15));
+        System.out.println("Rezultatul este: " + calc.adunare(12.5F, 20));
+        System.out.println("Rezultatul este: " + calc.adunare(12,22,42));
+
         System.out.println("Rezultatul este: " + calc.scadere(200, 123));
-        System.out.println("Rezultatul este: " + calc.impartire(16, 2));
+        System.out.println("Rezultatul este: " + calc.scadere(2000, 145.24F));
+        System.out.println("Rezultatul este: " + calc.scadere(5000, 600, 1400));
+
         System.out.println("Rezultatul este: " + calc.inmultire(100, 12));
+        System.out.println("Rezultatul este: " + calc.inmultire(20,15,20));
+        System.out.println("Rezultatul este: " + calc.inmultire(4,7,4));
+
+        System.out.println("Rezultatul este: " + calc.impartire(16, 2));
+        System.out.println("Rezultatul este: " + calc.impartire(144.5F, 50));
+        System.out.println("Rezultatul este: " + calc.impartire(20000, 40, 20));
 
 
         LogicalOperations logicalOp = new LogicalOperations();
