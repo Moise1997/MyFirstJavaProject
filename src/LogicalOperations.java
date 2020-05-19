@@ -124,7 +124,7 @@ public class LogicalOperations {
                 System.out.println(big);
         } else {
             for (int small = y; small < x; small++)
-            System.out.println(small);
+                System.out.println(small);
         }
     }
 
@@ -159,7 +159,7 @@ public class LogicalOperations {
             sum2 += i;
             counter++;
         }
-        return sum2/counter;
+        return sum2 / counter;
     }
 
     public void tipar(int number) {                 //ex9
@@ -242,7 +242,7 @@ public class LogicalOperations {
             count++;
         }
         System.out.println(count);
-        double average = sum/count;
+        double average = sum / count;
         System.out.println("The average number is:" + average);
     }
 
@@ -251,7 +251,7 @@ public class LogicalOperations {
         float sum = 0F;
         while (firstNumber <= lastNumber) {
             if (firstNumber % 7 == 0) {
-                count ++;
+                count++;
                 sum += firstNumber;
             }
             firstNumber++;
@@ -301,7 +301,73 @@ public class LogicalOperations {
         }
 
     }
+
+    // Teme array
+
+    public int [] getArray() {              //ex2
+        int[] array = new int[100];
+        array[0] = 1;
+        array[1] = 2;
+        for (int i = 0; i < 100; i++) {
+            array[i] = i + 1;
+            System.out.println(array[i]);
+        }
+        return array;
     }
+
+    public int [] evenNumbersArray (int from, int to){          //ex3
+        int [] array = new int [((to-from) /2 ) +1];
+        int index = 0;
+        for(int i = from; i < to; i++){
+            if (i%2 ==0){
+                array[index] = i;
+                index ++;
+                System.out.println(i);
+            }
+
+        }
+        return array;
+    }
+
+    public float averageArray (int [] array){               //ex4
+        float sum = 0;
+        for (int i = 0; i < array.length; i++){
+            sum += array [i];
+        }
+        return sum / array.length;
+    }
+
+    public String stringArrays (String [] array, String ceva){      //ex5
+        if (ceva.equals(array)){
+            return "True";
+        }else {
+            return "False";
+        }
+    }
+
+    public int checkNumber (int [] array, int number){          //ex6
+        int da = -1;
+        for (int i = 0; i < array.length; i++){
+            if (array[i] == number){
+                da = i;
+            }
+        }
+        return da;
+    }
+
+    public void pattern(){                      //ex7
+        String[] ceva = new String [10];
+        for (int i = 0; i < ceva.length; i++)
+        System.out.println(new String("- - - - - - - - - - "));
+    }
+
+
+
+}
+
+
+
+
 
 
 
