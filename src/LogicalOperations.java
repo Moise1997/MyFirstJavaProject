@@ -337,13 +337,15 @@ public class LogicalOperations {
         return sum / array.length;
     }
 
-    public String stringArrays (String [] array, String ceva){      //ex5
-        if (ceva.equals(array)){
-            return "True";
-        }else {
-            return "False";
+    public boolean stringArrays (String [] array, String ceva) {      //ex5
+        for (String s : array) {
+            if (ceva.equals(s)) {
+                return true;
+            }
         }
+        return false;
     }
+
 
     public int checkNumber (int [] array, int number){          //ex6
         int da = -1;
@@ -360,6 +362,23 @@ public class LogicalOperations {
         for (int i = 0; i < ceva.length; i++)
         System.out.println(new String("- - - - - - - - - - "));
     }
+
+    public int [] numbersArrays (int [] array, int ceva) {      //ex8
+        int [] newArray = new int [array.length-1];
+        for (int s : array) {
+            if (ceva == s) {
+                for (int i = 0; i < array.length - 1; i++){
+                        if (array[i] != ceva){
+                            newArray [i]  = array [i];
+                    }
+                }
+            }
+        }
+        return newArray;
+    }
+
+
+
 
 
 

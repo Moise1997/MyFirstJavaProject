@@ -104,11 +104,14 @@ public class Main {
 
         System.out.println(logicalOp.averageArray(array));          //ex4
 
+        System.out.println(logicalOp.stringArrays(new String []{"mere","pere","nuci","banane"},"mere"));     //ex5
+
         System.out.println("Number position is : " + logicalOp.checkNumber(new int[]{1,2,3,4,5,6},2));     //ex6
 
         logicalOp.pattern();                //ex7
 
-        System.out.println(logicalOp.stringArrays(new String[]{"mere","pere","nuci"},"mere"));
+        System.out.println(logicalOp.numbersArrays(new int[]{1,2,3,4,5,6},2));
+
 
 
 
