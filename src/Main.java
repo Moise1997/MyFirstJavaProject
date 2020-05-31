@@ -2,6 +2,9 @@ import org.w3c.dom.ls.LSOutput;
 
 import javax.sound.midi.Soundbank;
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
@@ -110,16 +113,45 @@ public class Main {
 
         logicalOp.pattern();                //ex7
 
-        System.out.println(logicalOp.numbersArrays(new int[]{1,2,3,4,5,6},2));
+        System.out.println(Arrays.toString(logicalOp.removeNrFromArray(new int[]{1, 2, 3, 4, 5, 6}, 2)));     //ex8
 
+        System.out.println(logicalOp.getSecondSmallestNrInArray(new int[]{1,2,3,4,5,6,7}));     //ex9
 
+        //System.out.println(Arrays.toString(logicalOp.copyArray(new int[]{1, 2, 3, 4, 5, 6}, new int[]{})));     //ex10
 
+        //Teme List
 
+        List<Integer> myList = new ArrayList();
+        myList.add(1);
+        myList.add(2);
+        myList.add(3);
+        myList.add(4);
+        myList.add(5);
+        myList.add(6);
 
+        logicalOp.displayList(myList);      //ex1
 
+        logicalOp.addToList(myList,10);     //ex2
+        System.out.println(myList);            //ex2
 
+        logicalOp.listShow(myList,3);       //ex3       (nu functioneaza)
 
+        logicalOp.backwardsList(myList);        //ex4
 
+        List<String> stringList = new ArrayList();      //ex5
+        stringList.add("Ana");
+        stringList.add("are");
+        stringList.add("mere");
+        stringList.add("si");
+        logicalOp.stringList(stringList,4,"pere");
+        System.out.println(stringList);
+
+        logicalOp.someList(myList,0,9);     //ex6
+        System.out.println(myList);
+
+        logicalOp.listPositions(myList);        //ex7
+
+        System.out.println(logicalOp.biggestListNumber(myList));        //ex8 (nu functioneaza)
 
     }
 }

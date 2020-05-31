@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class LogicalOperations {
 
 
@@ -358,27 +361,93 @@ public class LogicalOperations {
     }
 
     public void pattern(){                      //ex7
-        String[] ceva = new String [10];
-        for (int i = 0; i < ceva.length; i++)
-        System.out.println(new String("- - - - - - - - - - "));
-    }
-
-    public int [] numbersArrays (int [] array, int ceva) {      //ex8
-        int [] newArray = new int [array.length-1];
-        for (int s : array) {
-            if (ceva == s) {
-                for (int i = 0; i < array.length - 1; i++){
-                        if (array[i] != ceva){
-                            newArray [i]  = array [i];
-                    }
-                }
-            }
+        char[] line = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-',};
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(line);
         }
-        return newArray;
     }
 
+    public int[] removeNrFromArray(int[] myArray, int nr) {         //ex8
+        int[] secondArray = new int[myArray.length];
+        int j = 0;
+        for (int i = 0; i < myArray.length; i++) {
+            if (myArray[i] == nr)
+                continue;
+            secondArray[j++] = myArray[i];
+        }
+        int[] finArray = new int[j];
+        for (int i = 0; i < j; i++)
+            finArray[i] = secondArray[i];
+        return finArray;
+    }
 
+    public int getSecondSmallestNrInArray(int[] myArray) {          //ex9
+        int arrLen = myArray.length;
+        int iMin = myArray[0];
+        int i;
+        for (i = 0; i < arrLen; i++) {
+            if (myArray[i] < iMin)
+                iMin = myArray[i];
+        }
+        int iMin2 = 2147483647;
+        for (i = 0; i < arrLen; i++) {
+            if (myArray[i] < iMin2 && myArray[i] != iMin)
+                iMin2 = myArray[i];
+        }
+        return iMin2;
+    }
 
+    public int[] copyArray(int[] firstArray, int[] emptyArray) {            //ex10
+        for (int i = 0, j = 0; i < firstArray.length; i++) {
+            emptyArray[j] = firstArray[i];
+            j++;
+        }
+        return emptyArray;
+    }
+
+    //Teme List
+
+    public void displayList(List<Integer> list){            //ex1
+        for (int x : list){
+            System.out.println(x);
+        }
+    }
+
+    public void addToList(List<Integer> myList, int x) {            //ex2
+        myList.add (x);
+    }
+
+    public void listShow (List<Integer> list, int x){           //ex3   (nu functioneaza)
+        for (int i = 0; i == x; i++){
+            System.out.println(x);
+        }
+    }
+
+    public void backwardsList (List<Integer> list){         //ex4
+        for (int i = list.size() - 1 ; i > 0 ; i--){
+            System.out.println(i);
+        }
+    }
+
+    public void stringList (List<String> list, int x, String y){        //ex5
+        list.add(x,y);
+    }
+
+    public void someList (List<Integer> list, int x, int y){        //ex6
+        list.add(x,y);
+    }
+
+    public void listPositions (List<Integer> list){             //ex7
+        System.out.println("Pe pozitia 1 este valoarea: " + list.get(0));
+        System.out.println("Pe pozitia 2 este valoarea: " + list.get(1));
+        System.out.println("Pe pozitia 3 este valoarea: " + list.get(2));
+        System.out.println("Pe pozitia 4 este valoarea: " + list.get(3));
+        System.out.println("Pe ultima pozitie este valoarea: " + list.get(list.size()-1));
+    }
+
+    public int biggestListNumber (List<Integer> list){          //ex8 (nu functioneaza)
+        return Integer.MAX_VALUE;
+    }
 
 
 
