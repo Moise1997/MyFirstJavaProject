@@ -16,7 +16,15 @@ public class Dog extends Animal {
     public void sleep (){
         System.out.println("Snore");
     }
-
+    public void eat (){
+        System.out.println("Eating pedigree");
+    }
+    public void run(){
+        System.out.println("Running at 20 kph");
+    }
+    public void walk (){
+        System.out.println("Walking at 4 kph");
+    }
 
 
 

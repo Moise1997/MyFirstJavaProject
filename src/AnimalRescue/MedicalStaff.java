@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class MedicalStaff extends Humans{
+public abstract class MedicalStaff extends Humans{
 
     public String specialization;
     public void setSpecialization (String specialization){
@@ -13,12 +13,8 @@ public class MedicalStaff extends Humans{
         System.out.println("Specialization");
     }
 
-    public void speak (){
-        System.out.println("");
-    }
-    public void proffesion (){
-        System.out.println("Doctor");
-    }
+    public abstract void speak ();
+    public abstract void proffesion ();
 
 
 

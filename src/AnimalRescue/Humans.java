@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Humans {
+public abstract class Humans {
 
     public String name;
     public int age;
@@ -74,9 +74,7 @@ public class Humans {
         this.workPlace = workPlace;
     }
 
-    public void speak (){
-        System.out.println("Words");
-    }
+    public abstract void speak ();
 
 
 

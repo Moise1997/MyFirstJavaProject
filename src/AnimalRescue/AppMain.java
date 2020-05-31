@@ -4,7 +4,7 @@ public class AppMain {
 
     public static void main(String[] args) {
 
-        Dog dog = new Dog();
+        GermanShepperd dog = new GermanShepperd();
         dog.setAge(4);
         dog.setName("Rex");
         dog.setChipNr(122333);
@@ -28,6 +28,8 @@ public class AppMain {
         System.out.println(dog.getColour());
         dog.speak();
         dog.sleep();
+        dog.run();
+        dog.walk();
 
         DogFood food = new DogFood();
         food.setAvailable("10 bags");
@@ -39,9 +41,9 @@ public class AppMain {
         System.out.println(food.getPrice());
         System.out.println(food.getQuantity());
 
-        Rescuer rescuer = new Rescuer();
+        Sarah rescuer = new Sarah();
         rescuer.setName("Sara");
-        rescuer.proffesion();
+        rescuer.profession();
         rescuer.speak();
         rescuer.setMoney(1500);
         System.out.println(rescuer.getName());

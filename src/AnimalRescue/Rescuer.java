@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Rescuer extends Humans{
+public abstract class Rescuer extends Humans{
 
     public int money;
     public void setMoney (int money){
@@ -10,14 +10,7 @@ public class Rescuer extends Humans{
         return money;
     }
 
-    public void money (){
-        System.out.println("Money");
-    }
-
-    public void proffesion (){
-        System.out.println("Student");
-    }
-    public void speak (){
-        System.out.println("Hello. I would like to adopt a dog");
-    }
+    public abstract void money ();
+    public abstract void profession ();
+    public abstract void speak ();
 }

@@ -138,8 +138,8 @@ public class Main {
 
         logicalOp.backwardsList(myList);        //ex4
 
-        List<String> stringList = new ArrayList();      //ex5
-        stringList.add("Ana");
+       List<String> stringList = new ArrayList();      //ex5
+       stringList.add("Ana");
         stringList.add("are");
         stringList.add("mere");
         stringList.add("si");

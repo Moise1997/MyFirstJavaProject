@@ -418,7 +418,7 @@ public class LogicalOperations {
     }
 
     public void listShow (List<Integer> list, int x){           //ex3   (nu functioneaza)
-        for (int i = 0; i == x; i++){
+        for (int i = x; i == x; i++){
             System.out.println(x);
         }
     }

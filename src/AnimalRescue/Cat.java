@@ -1,7 +1,10 @@
 package AnimalRescue;
 
 public class Cat extends Animal {
-    
+
+    public void eat(){
+        System.out.println("Eating whiskas");
+    }
     public void speak (){
         System.out.println("Meoww");
     }
